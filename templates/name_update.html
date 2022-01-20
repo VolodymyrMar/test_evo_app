@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Update name
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <h1>Update name.</h1>
+    <form method="post">
+        <input type="text" name="name" id="name" class="form-control" value="{{ name.name }}" placeholder="Ведіть нове ім'я"><br>
+        <input type="submit" class="btn btn-success" value="Оновити">
+    </form>
+</div>
+{% endblock %}

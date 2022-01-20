@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ name.name }}
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <h1>{{ name.name }}</h1>
+
+    <div class="alert alert-info">
+        <h2>{{ name.name }}</h2>
+        <p><b>Date: {{ name.date.date() }}</b></p>
+        <a href="/users/{{ name.id_ }}/delete" class="btn btn-danger">Видалити</a>
+        <a href="/users/{{ name.id_ }}/update" class="btn btn-success">Змінити</a>
+    </div>
+</div>
+{% endblock %}

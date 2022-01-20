@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Всі гості
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <h1> Всі гості сайту</h1>
+
+    {% if names|length > 0 %}
+        {% for element in names %}
+        <div class="alert alert-info">
+            <h2>{{ element.name }}</h2>
+            <p><b>Date: {{ element.date.date() }}</b></p>
+            <a href="/users/{{ element.id_ }}" class="btn btn-warning">More</a>
+        </div>
+        {% endfor %}
+    {% else %}
+    <p>Ми ще не з ким не вітались(((</p>
+    {% endif %}
+</div>
+{% endblock %}
