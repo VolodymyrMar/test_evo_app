@@ -1,7 +1,7 @@
 # Project for Evo lab 2022 with python
 Test project to show
-    - features of Flask
-    - candidate skills
+  - features of Flask
+  - candidate skills
 
 ## Tools:
 - [Flask](https://flask.palletsprojects.com/en/2.0.x/)
@@ -24,7 +24,7 @@ Test project to show
 
 
 ##   Run guide
-1.Run app.py to launch the service.
-2.In terminal  run the command:
+1. Run app.py to launch the service.
+2. In terminal  run the command:
   - from app import db
   - db.create_all()
